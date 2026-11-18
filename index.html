@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OutbreakLab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Outbreak<span>Lab</span></h1>
+    <p>Change one rule. Watch the whole outbreak change.</p>
+  </header>
+  <section>
+    <canvas id="world" width="640" height="420" aria-label="Simulation map"></canvas>
+    <canvas id="chart" width="640" height="150" aria-label="Outbreak chart"></canvas>
+    <div class="stats" id="stats"></div>
+    <p class="hint" id="note"></p>
+  </section>
+  <aside class="card">
+    <h2>Rules</h2>
+    <div class="row" id="presets"></div>
+    <div id="controls"></div>
+    <div class="row">
+      <button class="main" id="play">Pause</button>
+      <button id="sick">Add 5 sick</button>
+      <button id="reset">Reset</button>
+    </div>
+    <p class="hint">A toy model for exploring ideas, not a forecast of any real disease.</p>
+  </aside>
+</main>
+<script src="sim.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
